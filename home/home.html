@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compostagem</title>
+  <!-- Ajuste de caminho: se o CSS estiver na pasta acima de home.html -->
+  <link rel="stylesheet" href="../home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="cabecalho">
+    <nav class="navegacao">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#sobre">Sobre compostagem</a></li>
+        <li><a href="#como-fazer">Como fazer</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="botoes">
+        <button class="btn-entrar">Entrar</button>
+        <button class="btn-cadastrar">Cadastre-se</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="secao-principal">
+    <div class="hero-imagem">
+      <img src="imagem-hero.jpg" alt="Pessoas fazendo compostagem">
+    </div>
+    <div class="descricao">
+      <h1>Compostar é Cuidar da Terra e da Comunidade</h1>
+      <p>Você sabia que mais da metade do lixo que produzimos todos os dias pode virar adubo? A compostagem é uma forma simples e poderosa de transformar restos de comida e folhas secas em um fertilizante natural, cheio de vida. Com ela, a gente reduz o lixo, evita a poluição, enriquece o solo e ainda ajuda a construir um futuro mais sustentável para todos. Compostar é economia, é saúde para a terra e também um gesto de cuidado com o nosso entorno. Seja em casa, no quintal, na feira ou no espaço comunitário — sempre há um lugar para começar. Vem descobrir os benefícios da compostagem e transformar seu lixo em vida!</p>
+      <a href="#sobre" class="btn-saiba-mais">Saiba mais...</a>
+    </div>
+  </section>
+
+  <section class="secao-destaques">
+    <div class="destaque">
+      <img src="icon-beneficios.svg" alt="Benefícios para a comunidade">
+      <h3>Benefícios para comunidade</h3>
+      <a href="#" class="btn-destaque">Saiba mais</a>
+    </div>
+    <div class="destaque">
+      <img src="icon-tecnicas.svg" alt="Técnicas de compostagem">
+      <h3>Técnicas de Compostagem</h3>
+      <a href="#" class="btn-destaque">Saiba mais</a>
+    </div>
+    <div class="destaque">
+      <img src="icon-materiais.svg" alt="Materiais e cuidados">
+      <h3>Materiais e Cuidados</h3>
+      <a href="#" class="btn-destaque">Saiba mais</a>
+    </div>
+    <div class="destaque">
+      <img src="icon-jogar.svg" alt="Aprenda jogando">
+      <h3>Aprenda jogando em nossa plataforma</h3>
+      <a href="#" class="btn-jogar">Jogar</a>
+    </div>
+  </section>
+
+  <section class="secao-noticias">
+    <h2>Notícias</h2>
+    <div class="noticias-grid">
+      <article class="noticia">
+        <img src="noticia1.jpg" alt="Descarte de resíduos">
+        <p>Brasil produz cerca de 800 milhões de toneladas de resíduos orgânicos por ano, diz o Plano Nacional de Resíduos Sólidos.</p>
+      </article>
+      <article class="noticia">
+        <img src="noticia2.jpg" alt="Lixo orgânico">
+        <p>Apenas 1% do lixo orgânico é reaproveitado no Brasil. Os dados foram publicados pela Associação Brasileira das Empresas de Limpeza Pública e Resíduos Especiais.</p>
+      </article>
+      <article class="noticia">
+        <img src="noticia3.jpg" alt="Desperdício de alimentos">
+        <p>Todos os anos, 1,3 bilhões de toneladas de alimentos são perdidas ou desperdiçadas no mundo, segundo o Índice de Desperdício de Alimentos do Programa das Nações Unidas para o Meio Ambiente (PNUMA).</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Chat flutuante -->
+  <div class="chat-flutuante">
+    <button class="btn-chat-toggle">💬</button>
+    <div class="chat-janela hidden">
+      <div class="chat-cabecalho">
+        <span>Atendimento</span>
+        <button class="fechar-chat">×</button>
+      </div>
+      <div class="chat-mensagens">
+        <div class="mensagem recebido">Olá! Em que posso ajudar?</div>
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Digite sua mensagem...">
+        <button class="btn-enviar">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="rodape">
+    <p>&copy; 2025 Compostagem Sustentável</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.btn-chat-toggle');
+    const janela = document.querySelector('.chat-janela');
+    const fechar = document.querySelector('.fechar-chat');
+    toggle.addEventListener('click', () => janela.classList.toggle('hidden'));
+    fechar.addEventListener('click', () => janela.classList.add('hidden'));
+  </script>
+</body>
+</html>

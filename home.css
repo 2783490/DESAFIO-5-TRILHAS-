@@ -49,6 +49,23 @@ button {
   font-weight: 600;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.img-logo {
+  width: 45px;     
+  height: auto;
+}
+
+.img-nome {
+  width: 140px;     
+  height: auto;
+}
+
+
 /* Hero */
 .secao-principal {
   display: flex;
@@ -80,6 +97,7 @@ button {
   border-radius: 4px;
   font-weight: 600;
 }
+
 
 /* Destaques */
 .secao-destaques {

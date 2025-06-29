@@ -222,7 +222,8 @@ button {
 
 .tipos-conteudo img {
   width: 100%;
-  max-width: 500px;
+  width: 350px;
+  height: 300px;
   border-radius: 8px;
 }
 

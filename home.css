@@ -71,6 +71,7 @@ button {
 }
 .descricao p {
   margin-bottom: 1.5rem;
+  text-align: justify;
 }
 .btn-saiba-mais {
   background-color: #3EA13E;
@@ -139,6 +140,7 @@ button {
 .noticia p {
   padding: 1rem;
   font-size: 0.95rem;
+  text-align: justify;
 }
 
 /* Rodapé */
@@ -231,6 +233,7 @@ button {
   flex: 1;
   line-height: 1.6;
   font-size: 1rem;
+  text-align: justify;
 }
 
 /* ----------- Perguntas Frequentes (FAQ) ----------- */

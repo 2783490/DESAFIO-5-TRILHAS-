@@ -30,23 +30,39 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2rem; /* espaçamento lateral para respiro */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .navegacao ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2.5rem;  /* aumenta o espaçamento entre os links */
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .navegacao ul li a {
   color: #fff;
   font-weight: 600;
 }
+.botoes {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
 .botoes button {
   background-color: #fff;
   color: #3EA13E;
-  padding: 0.5rem 1rem;
-  margin-left: 0.5rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 4px;
   font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.botoes button:hover {
+  background-color: #e0e0e0;
 }
 
 .logo {
@@ -56,13 +72,13 @@ button {
 }
 
 .img-logo {
-  width: 45px;     
+  width: 95px;     
   height: auto;
 }
 
 .img-nome {
-  width: 140px;     
-  height: auto;
+  width: 195px;     
+  height: 35px;
 }
 
 

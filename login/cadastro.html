@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="../cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <section class="container-cadastro">
+    
+    <div class="cabecalho-logo">
+      <div class="conteudo-logo">
+        <h1 class="texto-logo">
+          <span>Eco</span><span class="green">&</span><span class="texto-logo">Húmus</span>
+        </h1>
+        <img src="/DESAFIO-5-TRILHAS--main/home/figuras, imagens e afins/image.png" alt="Logo Eco&Húmus" class="imagem-logo">
+      </div>
+    </div>
+    
+    <div class="conteudo-formulario">
+      <h2 class="titulo-formulario">Cadastro</h2>
+      <form class="formulario-cadastro">
+
+        <div class="campo-formulario">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="confirm-email">Confirme seu e-mail</label>
+          <input type="email" id="confirm-email" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="confirm-senha">Confirme sua senha</label>
+          <input type="password" id="confirm-senha" required>
+        </div>
+
+        <div class="termos-container">
+          <input type="checkbox" id="termos" required>
+          <label for="termos" class="texto-termos">
+            Ao confirmar, você aceita nossa <a href="#" class="link-termos">política de privacidade e proteção de dados</a>.
+          </label>
+        </div>
+
+        <button type="submit" class="botao-cadastrar">Cadastrar</button>
+      </form>
+    </div>
+  </section>
+  <script src="/Validação/cadastro.js"></script>
+</body>
+</html>

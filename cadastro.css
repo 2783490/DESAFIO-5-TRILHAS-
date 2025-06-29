@@ -1,0 +1,178 @@
+/* ESTILOS GERAIS */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inclusive Sans', sans-serif;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* CONTAINER PRINCIPAL - OCUPA TELA INTEIRA */
+.container-cadastro {
+  background-color: #fff;
+  width: 100%;
+  max-width: 100%; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CABEÇALHO DO LOGO */
+.cabecalho-logo {
+  background-color: #4CAF50;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.conteudo-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  flex-wrap: wrap; /* Permite quebra em telas pequenas */
+  justify-content: center;
+}
+
+.texto-logo {
+  color: black;
+  font-size: clamp(24px, 6vw, 30px); /* Tamanho responsivo */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.texto-logo span.green {
+  color: #1e8621;
+  margin: 0 3px; 
+}
+
+.imagem-logo {
+  height: clamp(50px, 8vw, 60px); 
+  width: auto;
+}
+
+/* CONTEÚDO DO FORMULÁRIO */
+.conteudo-formulario {
+  padding: 20px 15px; 
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.titulo-formulario {
+  font-size: clamp(20px, 5vw, 24px); /* Tamanho responsivo */
+  font-weight: bold;
+  color: #2e2e2e;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+/* FORMULÁRIO */
+.formulario-cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Espaço reduzido */
+  width: 100%;
+}
+
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-formulario label {
+  font-size: clamp(13px, 3.5vw, 14px); /* Tamanho responsivo */
+  color: #555;
+  margin-bottom: 5px;
+  margin-left: 0; 
+}
+
+.campo-formulario input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: clamp(13px, 3.5vw, 14px); /* Tamanho responsivo */
+  height: 40px;
+  box-sizing: border-box;
+}
+
+/* TERMOS */
+.termos-container {
+  display: flex;
+  align-items: flex-start; 
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.termos-container input[type="checkbox"] {
+  margin-top: 3px;
+  min-width: 16px;
+}
+
+.texto-termos {
+  font-size: clamp(11px, 3vw, 12px); /* Tamanho responsivo */
+  color: #555;
+  line-height: 1.4;
+  text-align: left; 
+}
+
+.link-termos {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* BOTÃO */
+.botao-cadastrar {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  font-size: clamp(14px, 4vw, 16px); /* Tamanho responsivo */
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s; 
+}
+
+.botao-cadastrar:hover {
+  background-color: #3e8e41;
+}
+
+/* PARA DESKTOP (acima de 768px) */
+@media (min-width: 768px) {
+  body {
+    padding-top: 40px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .container-cadastro {
+    max-width: 350px; 
+    min-height: auto; 
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  }
+  
+  .conteudo-formulario {
+    padding: 30px 25px; 
+  }
+  
+  .formulario-cadastro {
+    gap: 15px; 
+  }
+  
+  .cabecalho-logo {
+    padding: 0 20px; 
+  }
+  
+  .conteudo-logo {
+    gap: 10px; 
+  }
+}

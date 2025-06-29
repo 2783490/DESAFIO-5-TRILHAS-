@@ -1,0 +1,153 @@
+/* ESTILOS GERAIS */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inclusive Sans', sans-serif;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* CONTAINER PRINCIPAL - OCUPA TELA INTEIRA */
+.container-login {
+  background-color: #fff;
+  width: 100%;
+  max-width: 100%; 
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+
+/* CABEÇALHO VERDE */
+.cabecalho-login {
+  background-color: #4CAF50;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  justify-content: flex-end;
+}
+
+/* BOTÃO DE VOLTA */
+.botao-volta {
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+  text-decoration: none;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin-right: 10px;
+  border: 1px solid black;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.conteudo-login {
+  padding: 20px 15px; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  flex-grow: 1; 
+}
+
+/* LOGO */
+.logo-login {
+  max-width: 85px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+/* TÍTULO */
+.titulo-login {
+  font-size: clamp(20px, 6vw, 24px); 
+  font-weight: bold;
+  color: #2e2e2e;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-login span.destaque-verde {
+  color: #4CAF50;
+}
+
+/* FORMULÁRIO */
+.formulario-login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  width: 100%;
+}
+
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grupo-input label {
+  font-size: clamp(13px, 3.5vw, 14px); /* Tamanho responsivo */
+  color: #555;
+  text-align: left;
+  width: 100%;
+}
+
+.grupo-input input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: clamp(13px, 3.5vw, 14px); /* Tamanho responsivo */
+  height: 40px;
+  box-sizing: border-box;
+}
+
+/* BOTÃO DE ENTRAR */
+.botao-entrar {
+  background-color: transparent;
+  border: 1px solid #4CAF50;
+  color: #4CAF50;
+  padding: 12px; 
+  border-radius: 20px;
+  font-size: clamp(14px, 4vw, 16px); /* Tamanho responsivo */
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+
+.botao-entrar:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* CLASSE AUXILIAR */
+.centralizado {
+  text-align: center;
+}
+
+/* PARA TELAS MAIORES (acima de 768px) */
+@media (min-width: 768px) {
+  body {
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container-login {
+    max-width: 350px; 
+    min-height: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  }
+  
+  .conteudo-login {
+    padding: 40px 25px; 
+    gap: 30px; 
+  }
+}

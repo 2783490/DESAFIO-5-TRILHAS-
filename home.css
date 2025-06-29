@@ -197,3 +197,84 @@ button {
 .btn-chat:hover {
   background-color: #369f37;
 }
+
+/* ----------- Tipos de Compostagem ----------- */
+.secao-tipos {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.secao-tipos h2 {
+  color: #3EA13E;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.tipos-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tipos-conteudo img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.tipos-conteudo p {
+  flex: 1;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* ----------- Perguntas Frequentes (FAQ) ----------- */
+.secao-faq {
+  background-color: #f4f4f4;
+  padding: 2rem;
+}
+
+.secao-faq h2 {
+  color: #3EA13E;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.faq-item {
+  border: 1px solid #3EA13E;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-item .pergunta {
+  font-weight: 700;
+  color: #3EA13E;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item .resposta {
+  line-height: 1.6;
+}
+
+/* ----------- Responsivo ----------- */
+@media (max-width: 768px) {
+  .intuito-conteudo,
+  .tipos-conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .faq-item {
+    padding: 1rem;
+  }
+}
